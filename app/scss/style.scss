@@ -1,0 +1,206 @@
+@import 'normalize';
+
+// @import 'mobil';
+.cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-color: #ff923e;
+}
+
+.body {
+    position: relative;
+}
+
+#table-3D-obj {
+position: absolute;
+}
+
+// canvas {
+//     overflow: hidden;
+//     position: absolute;
+//     left: 0;
+// }
+
+.header {
+    position: absolute;
+    padding-top: 15px;
+    width: 100%;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.welcom__section,
+.about__section,
+.work__section,
+.contact__section {
+    height: 100vh;
+}
+
+.skills__section {
+    background: #0052aa;
+}
+
+.welcom__section {
+    position: relative;
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+
+.nav {
+    display: flex;
+    background: #999;
+    border-radius: 10px;
+    align-items: center;
+    background: #ff923e;
+    color: #fff;
+
+    .nav__item {
+        margin: 0 9px;
+    }
+
+    & .nav__item.active {
+        color: red;
+    }
+}
+
+
+.header__buttons {
+    display: flex;
+}
+
+.sound,
+.burger {
+    width: 48px;
+    height: 48px;
+    background: #ff923e;
+    border-radius: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    path {
+        transition: ease-in-out all .2s;
+    }
+
+    svg {
+        width: 25px;
+        height: 25px;
+    }
+
+}
+
+.sound-active {
+    background: #b9bbbe;
+}
+
+.burger {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 12px 0;
+
+    .burger-line {
+        height: 5px;
+        width: 30px;
+        background: #fff;
+        border-radius: 10px;
+    }
+}
+
+.burger-active {
+    position: relative;
+
+    .burger-line:nth-child(1) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(45deg);
+        transition: ease-in-out .1s;
+
+    }
+
+    .burger-line:nth-child(2) {
+        opacity: 0;
+        transition: ease-in-out .1s;
+
+    }
+
+    .burger-line:nth-child(3) {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(-45deg);
+        transition: ease-in-out .1s;
+    }
+}
+
+.sound-inactive {
+    background: #b9bbbe;
+}
+
+// section welcom
+.welcom__section {
+    padding-left: 25px;
+    display: flex;
+
+    .welcom-title {
+        font-size: 64px;
+        font-weight: 600;
+        color: #091434;
+        letter-spacing: -.5px;
+    }
+
+    .welcom-text {
+        margin-top: 30px;
+
+        font-size: 17px;
+        color: #7c8594;
+    }
+
+    .welcom-btn {
+        margin-top: 50px;
+
+        background-color: #ff923e;
+        color: #fff;
+        padding: 15px 35px;
+        border-radius: 30px;
+        font-weight: 800;
+    }
+}
+
+
+
+
+#table-3D-obj {
+    width: 100%;
+    /* Используем все доступное пространство по ширине */
+    height: 100vh;
+    /* Используем 100% высоты окна просмотра */
+    display: flex;
+    justify-content: center;
+    /* Выравниваем контент по центру по горизонтали */
+    align-items: center;
+    /* Выравниваем контент по центру по вертикали */
+}
+
+canvas {
+    width: 100%;
+    /* Заполнить всё доступное пространство в родительском контейнере */
+    height: 100%;
+    /* Заполнить всё доступное пространство в родительском контейнере */
+}

@@ -1,0 +1,82 @@
+html,
+body,
+main,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+button,
+input {
+	border: none;
+	background: none;
+
+}
+
+hr {
+	border: 0;
+}
+
+button {
+	cursor: pointer;
+}
+
+img {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background: #9368332a;
+	color: #000;
+	font-size: 14px;
+	line-height: 1;
+}
+
+ol,
+ul,
+nav {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* 
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+ */
+
+.container {
+	width: 100%;
+	max-width: 1310px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
