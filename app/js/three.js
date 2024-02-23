@@ -62,7 +62,7 @@ const controls = new OrbitControls(camera, renderer.domElement);
 //our 3d-obj
 let loader = new GLTFLoader();
 
-loader.load('/untitled.gltf',function(gltf){
+loader.load('/models/table.gltf',function(gltf){
         const mesh = gltf.scene;
 
     scene.add(mesh);
