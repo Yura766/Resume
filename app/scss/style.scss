@@ -16,7 +16,7 @@
 }
 
 #table-3D-obj {
-position: absolute;
+    position: absolute;
 }
 
 // canvas {
@@ -29,6 +29,7 @@ position: absolute;
     position: absolute;
     padding-top: 15px;
     width: 100%;
+    z-index: 10;
 
     .container {
         display: flex;
@@ -189,13 +190,14 @@ position: absolute;
 #table-3D-obj {
     width: 100%;
     /* Используем все доступное пространство по ширине */
-    height: 100vh;
+    // height: 100vh;
     /* Используем 100% высоты окна просмотра */
     display: flex;
     justify-content: center;
     /* Выравниваем контент по центру по горизонтали */
     align-items: center;
     /* Выравниваем контент по центру по вертикали */
+
 }
 
 canvas {
